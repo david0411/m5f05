@@ -9,22 +9,19 @@ import * as ParkingInfoApi from "../../../Api/ParkingInfoApi.ts";
 import * as SearchVacancyApi from "../../../Api/SearchVacancyApi.ts"
 
 type VehicleType = {
-    name: string;
-    index: number;
+    privateCar: string;
+    LGV:string;
+    HGV: string;
+    coach: string;
+    motorCycle: string;
 }
 
-const vehicleType0: VehicleType = {name: '', index: 0}
-const vehicleType1: VehicleType = {name: 'privateCar', index: 1}
-const vehicleType2: VehicleType = {name: 'LGV', index: 2}
-const vehicleType3: VehicleType = {name: 'HGV', index: 3}
-const vehicleType4: VehicleType = {name: 'coach', index: 4}
-const vehicleType5: VehicleType = {name: 'motorCycle', index: 5}
+type p = keyof VehicleType;
 
-
-async function createResultDate(districtInput: string, vehicleType: VehicleType) {
+async function createResultDate(districtInput: string, vehicleType: p) {
     const resultList: SearchResultData[] = [];
     const tempInfo = await ParkingInfoApi.getParkingInfo();
-    const tempVac = await SearchVacancyApi.getParkingVacancyInfo(vehicleType.name);
+    const tempVac = await SearchVacancyApi.getParkingVacancyInfo(vehicleType);
     if (tempInfo!=undefined && tempVac!=undefined)  {
         for (const parkingInfoDatum of tempInfo.results) {
             let resultVac = 0;
@@ -35,10 +32,11 @@ async function createResultDate(districtInput: string, vehicleType: VehicleType)
                 }
                 for (const parkingVacancyDatum of tempVac.results) {
                     if (parkingVacancyDatum.park_Id === parkingInfoDatum.park_Id) {
-                        if(parkingVacancyDatum[vehicleType] &&
-                            parkingVacancyDatum[vehicleType][0].vacancy_type==="A" &&
-                            parkingVacancyDatum[vehicleType][0].vacancy!=-1)
+                        if (parkingVacancyDatum[vehicleType] != undefined &&
+                            parkingVacancyDatum[vehicleType][0].vacancy_type === "A" &&
+                            parkingVacancyDatum[vehicleType][0].vacancy != -1) {
                             resultVac = parkingVacancyDatum[vehicleType][0].vacancy
+                        }
                         resultList.push({
                                 image: imgUrl,
                                 name: parkingInfoDatum.name,
@@ -58,7 +56,7 @@ async function createResultDate(districtInput: string, vehicleType: VehicleType)
 
 export default function SearchBox() {
     const [districtInput, setDistrictInput] = React.useState('');
-    const [vehicleType, setVehicleType] = React.useState<VehicleType>(vehicleType0);
+    const [vehicleType, setVehicleType] = React.useState('');
     const [resultData, setResultData] = React.useState<SearchResultData[]>([]);
     const handleVehicleTypeChange = (event: SelectChangeEvent) => {
         setVehicleType(event.target.value);
@@ -100,15 +98,15 @@ export default function SearchBox() {
                     <Select
                         labelId="vehicle-type"
                         id="vehicle-type-select"
-                        value={vehicleType.name}
+                        value={vehicleType}
                         label="Vehicle Type"
                         onChange={handleVehicleTypeChange}
                     >
-                        <MenuItem value={vehicleType1.name}>Private Car</MenuItem>
-                        <MenuItem value={vehicleType2.name}>LGV</MenuItem>
-                        <MenuItem value={vehicleType3.name}>HGV</MenuItem>
-                        <MenuItem value={vehicleType4.name}>Coach</MenuItem>
-                        <MenuItem value={vehicleType5.name}>Motorcycle</MenuItem>
+                        <MenuItem value={'privateCar'}>Private Car</MenuItem>
+                        <MenuItem value={'LGV'}>LGV</MenuItem>
+                        <MenuItem value={'HGV'}>HGV</MenuItem>
+                        <MenuItem value={'coach'}>Coach</MenuItem>
+                        <MenuItem value={'motorCycle'}>Motorcycle</MenuItem>
                     </Select>
                 </FormControl>
             </Grid>
