@@ -2233,28 +2233,23 @@
       "lang": "en_US"
     },
     {
-      "park_Id": "81",
-      "name": "Manulife Place",
+      "park_Id": "88",
+      "name": "Public Vehicle Parking, 8 Yan Yue Wai, Yau Tong",
       "nature": "commercial",
       "carpark_Type": "multi-storey",
       "address": {
         "region": "KLN",
         "dcDistrict": "Kwun Tong District",
-        "subDistrict": "Kwun Tong",
-        "buildingNo": "348",
-        "streetName": "Kwun Tong Road"
+        "subDistrict": "Yau Tong",
+        "buildingName": "Public Vehicle Parking",
+        "streetName": "8 Yan Yue Wai"
       },
-      "displayAddress": "348 Kwun Tong Road, Kwun Tong, KLN",
+      "displayAddress": "Public Vehicle Parking, 8 Yan Yue Wai, Yau Tong, KLN",
       "district": "Kwun Tong District",
-      "latitude": 22.3149246,
-      "longitude": 114.21706438,
-      "contactNo": "21543090",
-      "renditionUrls": {
-        "square": "https://sps-opendata.pilotsmartke.gov.hk/rest/getRendition/fs-1%3A469807454887318353643252933707115157023274119448.jpg/square.png",
-        "thumbnail": "https://sps-opendata.pilotsmartke.gov.hk/rest/getRendition/fs-1%3A469807454887318353643252933707115157023274119448.jpg/thumbnail.png",
-        "banner": "https://sps-opendata.pilotsmartke.gov.hk/rest/getRendition/fs-1%3A469807454887318353643252933707115157023274119448.jpg/banner.png"
-      },
-      "website": "https://itt-hk.com/en/index.php",
+      "latitude": 22.292238,
+      "longitude": 114.236683,
+      "contactNo": "2366 2823",
+      "website": "",
       "opening_status": "OPEN",
       "openingHours": [
         {
@@ -2269,40 +2264,25 @@
             "PH"
           ],
           "excludePublicHoliday": false,
-          "periodEnd": "24:00",
+          "periodEnd": "00:00",
           "periodStart": "00:00"
         }
       ],
       "heightLimits": [
         {
-          "height": 4.7
+          "remark": "M",
+          "height": 2.4
         }
       ],
       "facilities": [
+        "evCharger",
         "disabilities",
-        "unloading",
-        "evCharger"
+        "unloading"
       ],
       "paymentMethods": [
         "octopus"
       ],
       "privateCar": {
-        "monthlyCharges": [
-          {
-            "reserved": "non-reserved",
-            "covered": "covered",
-            "type": "monthly-park",
-            "remark": "",
-            "price": 3600
-          },
-          {
-            "reserved": "reserved",
-            "covered": "covered",
-            "type": "monthly-park",
-            "remark": "Terms & Conditions: 1) Prior application is required. 2) Availability on a first-come first-served basis, Tenants of Manulife Place shall have a first priority on Reserved Parking Spaces. 3) Manulife Place reserves the right to amend any terms and conditions without prior notice and make final decision regarding any disputes about the offer. 4) Subject to further revision without prior notice.",
-            "price": 4500
-          }
-        ],
         "dayNightParks": [
           {
             "weekdays": [
@@ -2314,12 +2294,11 @@
             ],
             "excludePublicHoliday": true,
             "periodStart": "08:00",
-            "periodEnd": "20:00",
-            "price": 200,
+            "periodEnd": "18:00",
+            "price": 70,
             "type": "day-park",
             "covered": "covered",
-            "validUntil": "no-restrictions",
-            "remark": "Terms & Conditions: 1) $200 day parking is valid for Private CPS, effective from 08:00 – 20:00 (Mon - Fri, except PH). 2) Parking is charged at the prevailing hourly rate or daily rate whichever is less. 3) Parking for part of an hour will be charged as an hour. 4) Single entry only. 5) Manulife Place reserves the right to amend any terms and conditions without prior notice and make final decision regarding any disputes about the offer. 6) Subject to further revision without prior notice."
+            "validUntil": "no-restrictions"
           },
           {
             "weekdays": [
@@ -2328,13 +2307,12 @@
               "PH"
             ],
             "excludePublicHoliday": false,
-            "validUntil": "no-restrictions",
-            "covered": "covered",
-            "type": "day-park",
-            "price": 100,
-            "periodEnd": "20:00",
             "periodStart": "08:00",
-            "remark": "Terms & Conditions: 1) $100 day parking is valid for Private CPS, effective from 08:00 – 20:00 (Sat, Sun and PH). 2) Parking is charged at the prevailing hourly rate or daily rate whichever is less. 3) Parking for part of an hour will be charged as an hour. 4) Single entry only. 5) Manulife Place reserves the right to amend any terms and conditions without prior notice and make final decision regarding any disputes about the offer. 6) Subject to further revision without prior notice."
+            "periodEnd": "18:00",
+            "price": 85,
+            "type": "day-park",
+            "covered": "covered",
+            "validUntil": "no-restrictions"
           },
           {
             "weekdays": [
@@ -2342,19 +2320,29 @@
               "TUE",
               "WED",
               "THU",
-              "FRI",
+              "FRI"
+            ],
+            "excludePublicHoliday": true,
+            "periodStart": "22:00",
+            "periodEnd": "08:00",
+            "price": 65,
+            "type": "night-park",
+            "covered": "covered",
+            "validUntil": "no-restrictions"
+          },
+          {
+            "weekdays": [
               "SAT",
               "SUN",
               "PH"
             ],
             "excludePublicHoliday": false,
-            "remark": "Terms & Conditions: 1) $95 night parking is valid for Private CPS, effective from 20:00 – 08:00. 2) Parking is charged at the prevailing hourly rate or daily rate whichever is less. 3) Parking for part of an hour will be charged as an hour. 4) Single entry only. 5) Manulife Place reserves the right to amend any terms and conditions without prior notice and make final decision regarding any disputes about the offer. 6) Subject to further revision without prior notice.",
-            "validUntil": "no-restrictions",
-            "covered": "covered",
-            "type": "night-park",
-            "price": 95,
+            "periodStart": "22:00",
             "periodEnd": "08:00",
-            "periodStart": "20:00"
+            "price": 85,
+            "type": "night-park",
+            "covered": "covered",
+            "validUntil": "no-restrictions"
           }
         ],
         "hourlyCharges": [
@@ -2367,12 +2355,26 @@
               "FRI"
             ],
             "excludePublicHoliday": true,
-            "covered": "covered",
+            "periodStart": "17:00",
+            "periodEnd": "23:00",
+            "price": 22,
             "type": "hourly",
-            "remark": "Terms & Conditions: 1) $200 day parking is valid for Private CPS, effective from 08:00 – 20:00 (Mon - Fri, except PH). 2) $100 day parking is valid for Private CPS, effective from 08:00 – 20:00 (Sat, Sun and PH). 3) $95 night parking is valid for Private CPS, effective from 20:00 – 08:00. 4) Parking is charged at the prevailing hourly rate or daily rate whichever is less. 5) Parking for part of an hour will be charged as an hour. 6) Single entry only. 7) Manulife Place reserves the right to amend any terms and conditions without prior notice and make final decision regarding any disputes about the offer. 8) Subject to further revision without prior notice.",
-            "price": 27,
-            "periodEnd": "24:00",
-            "periodStart": "00:00"
+            "covered": "covered"
+          },
+          {
+            "weekdays": [
+              "MON",
+              "TUE",
+              "WED",
+              "THU",
+              "FRI"
+            ],
+            "excludePublicHoliday": true,
+            "periodStart": "23:00",
+            "periodEnd": "17:00",
+            "price": 15,
+            "type": "hourly",
+            "covered": "covered"
           },
           {
             "weekdays": [
@@ -2381,62 +2383,33 @@
               "PH"
             ],
             "excludePublicHoliday": false,
-            "remark": "Terms & Conditions: 1) $200 day parking is valid for Private CPS, effective from 08:00 – 20:00 (Mon - Fri, except PH). 2) $100 day parking is valid for Private CPS, effective from 08:00 – 20:00 (Sat, Sun and PH). 3) $95 night parking is valid for Private CPS, effective from 20:00 – 08:00. 4) Parking is charged at the prevailing hourly rate or daily rate whichever is less. 5) Parking for part of an hour will be charged as an hour. 6) Single entry only. 7) Manulife Place reserves the right to amend any terms and conditions without prior notice and make final decision regarding any disputes about the offer. 8) Subject to further revision without prior notice.",
             "covered": "covered",
             "type": "hourly",
-            "price": 16,
-            "periodEnd": "24:00",
-            "periodStart": "00:00"
+            "price": 25,
+            "periodEnd": "23:00",
+            "periodStart": "17:00"
+          },
+          {
+            "weekdays": [
+              "SAT",
+              "SUN",
+              "PH"
+            ],
+            "excludePublicHoliday": false,
+            "covered": "covered",
+            "type": "hourly",
+            "price": 20,
+            "periodEnd": "17:00",
+            "periodStart": "23:00"
           }
         ],
         "spaceUNL": 0,
-        "spaceEV": 6,
-        "spaceDIS": 3,
-        "space": 80
+        "spaceEV": 16,
+        "spaceDIS": 1,
+        "space": 122
       },
       "LGV": {
-        "monthlyCharges": [
-          {
-            "reserved": "non-reserved",
-            "covered": "covered",
-            "type": "monthly-park",
-            "price": 5200,
-            "remark": "Terms & Conditions: 1) Prior application is required. 2) Availability on a first-come first-served basis, Tenants of ITT shall have a first priority on Reserved Parking Spaces. 3) International Trade Tower reserves the right to amend any terms and conditions without prior notice and make final decision regarding any disputes about the offer. 4) Subject to further revision without prior notice."
-          }
-        ],
-        "dayNightParks": [
-          {
-            "weekdays": [
-              "MON",
-              "TUE",
-              "WED",
-              "THU",
-              "FRI"
-            ],
-            "excludePublicHoliday": true,
-            "periodStart": "08:00",
-            "periodEnd": "20:00",
-            "price": 200,
-            "type": "day-park",
-            "covered": "covered",
-            "validUntil": "no-restrictions",
-            "remark": "Terms & Conditions: 1) $200 day parking is valid for Private CPS, effective from 08:00 – 20:00 (Mon - Fri, except PH). 2) Parking is charged at the prevailing hourly rate or daily rate whichever is less. 3) Parking for part of an hour will be charged as an hour. 4) Single entry only. 5) Manulife Place reserves the right to amend any terms and conditions without prior notice and make final decision regarding any disputes about the offer. 6) Subject to further revision without prior notice."
-          },
-          {
-            "weekdays": [
-              "SAT",
-              "SUN",
-              "PH"
-            ],
-            "excludePublicHoliday": false,
-            "remark": "Terms & Conditions: 1) $100 day parking is valid for Private CPS, effective from 08:00 – 20:00 (Sat, Sun and PH). 2) Parking is charged at the prevailing hourly rate or daily rate whichever is less. 3) Parking for part of an hour will be charged as an hour. 4) Single entry only. 5) Manulife Place reserves the right to amend any terms and conditions without prior notice and make final decision regarding any disputes about the offer. 6) Subject to further revision without prior notice.",
-            "validUntil": "no-restrictions",
-            "covered": "covered",
-            "type": "day-park",
-            "price": 100,
-            "periodEnd": "20:00",
-            "periodStart": "08:00"
-          },
+        "hourlyCharges": [
           {
             "weekdays": [
               "MON",
@@ -2449,62 +2422,19 @@
               "PH"
             ],
             "excludePublicHoliday": false,
-            "validUntil": "no-restrictions",
-            "covered": "covered",
-            "type": "night-park",
-            "remark": "Terms & Conditions: 1) $95 night parking is valid for Private CPS, effective from 20:00 – 08:00. 2) Parking is charged at the prevailing hourly rate or daily rate whichever is less. 3) Parking for part of an hour will be charged as an hour. 4) Single entry only. 5) Manulife Place reserves the right to amend any terms and conditions without prior notice and make final decision regarding any disputes about the offer. 6) Subject to further revision without prior notice.",
-            "price": 95,
-            "periodEnd": "08:00",
-            "periodStart": "20:00"
-          }
-        ],
-        "hourlyCharges": [
-          {
-            "weekdays": [
-              "MON",
-              "TUE",
-              "WED",
-              "THU",
-              "FRI"
-            ],
-            "excludePublicHoliday": true,
             "periodStart": "00:00",
-            "periodEnd": "24:00",
-            "price": 27,
-            "type": "hourly",
-            "covered": "covered",
-            "remark": ""
-          },
-          {
-            "weekdays": [
-              "SAT",
-              "SUN",
-              "PH"
-            ],
-            "excludePublicHoliday": false,
-            "remark": "Terms & Conditions: 1) $200 day parking is valid for Private CPS, effective from 08:00 – 20:00 (Mon - Fri, except PH). 2) $100 day parking is valid for Private CPS, effective from 08:00 – 20:00 (Sat, Sun and PH). 3) $95 night parking is valid for Private CPS, effective from 20:00 – 08:00. 4) Parking is charged at the prevailing hourly rate or daily rate whichever is less. 5) Parking for part of an hour will be charged as an hour. 6) Single entry only. 7) Manulife Place reserves the right to amend any terms and conditions without prior notice and make final decision regarding any disputes about the offer. 8) Subject to further revision without prior notice.",
-            "covered": "covered",
-            "type": "hourly",
-            "price": 16,
-            "periodEnd": "24:00",
-            "periodStart": "00:00"
+            "periodEnd": "00:00",
+            "price": 26,
+            "type": "half-hourly",
+            "covered": "covered"
           }
         ],
         "spaceUNL": 0,
-        "spaceEV": 0,
+        "spaceEV": 3,
         "spaceDIS": 0,
-        "space": 10
+        "space": 24
       },
       "HGV": {
-        "monthlyCharges": [
-          {
-            "price": 5200,
-            "remark": "Terms & Conditions: 1) Prior application is required. 2) Availability on a first-come first-served basis, Tenants of Manulife Place shall have a first priority on Reserved Parking Spaces. 3) Manulife Place reserves the right to amend any terms and conditions without prior notice and make final decision regarding any disputes about the offer. 4) Subject to further revision without prior notice.",
-            "type": "monthly-park",
-            "covered": "covered",
-            "reserved": "non-reserved"
-          }
-        ],
         "hourlyCharges": [
           {
             "weekdays": [
@@ -2518,33 +2448,17 @@
               "PH"
             ],
             "excludePublicHoliday": false,
-            "usageThresholds": [
-              {
-                "price": 0,
-                "hours": 0.5
-              },
-              {
-                "price": 27,
-                "hours": 0.5
-              },
-              {
-                "price": 32,
-                "hours": 0.5
-              }
-            ],
-            "usageMinimum": 0.5,
-            "covered": "covered",
+            "periodStart": "00:00",
+            "periodEnd": "00:00",
+            "price": 36,
             "type": "half-hourly",
-            "price": 32,
-            "remark": "1) Free / 1st half hour. 2) HK$27 / 2nd half hour. 3) HK$32 / 3rd half hour & thereafter. 4) Parking for part of an hour will be charged as an hour.  5) Single entry only. 6) Manulife Place reserves the right to amend any terms and conditions without prior notice and make final decision regarding any disputes about the offer. 7) Subject to further revision without prior notice.",
-            "periodEnd": "24:00",
-            "periodStart": "00:00"
+            "covered": "covered"
           }
         ],
         "spaceUNL": 0,
-        "spaceEV": 0,
+        "spaceEV": 1,
         "spaceDIS": 0,
-        "space": 5
+        "space": 25
       },
       "coach": {
         "spaceUNL": 0,
@@ -2553,109 +2467,14 @@
         "space": 0
       },
       "motorCycle": {
-        "monthlyCharges": [
-          {
-            "remark": "Terms & Conditions: 1) Prior application is required. 2) Availability on a first-come first-served basis, Tenants of Manulife Place shall have a first priority on Reserved Parking Spaces. 3) Manulife Place reserves the right to amend any terms and conditions without prior notice and make final decision regarding any disputes about the offer. 4) Subject to further revision without prior notice.",
-            "reserved": "non-reserved",
-            "covered": "covered",
-            "type": "monthly-park",
-            "price": 850
-          }
-        ],
-        "dayNightParks": [
-          {
-            "weekdays": [
-              "MON",
-              "TUE",
-              "WED",
-              "THU",
-              "FRI"
-            ],
-            "excludePublicHoliday": true,
-            "periodStart": "08:00",
-            "periodEnd": "20:00",
-            "price": 200,
-            "remark": "Terms & Conditions: 1) $200 day parking is valid for Private CPS, effective from 08:00 – 20:00 (Mon - Fri, except PH). 2) Parking is charged at the prevailing hourly rate or daily rate whichever is less. 3) Parking for part of an hour will be charged as an hour. 4) Single entry only. 5) Manulife Place reserves the right to amend any terms and conditions without prior notice and make final decision regarding any disputes about the offer. 6) Subject to further revision without prior notice.",
-            "type": "day-park",
-            "covered": "covered",
-            "validUntil": "no-restrictions"
-          },
-          {
-            "weekdays": [
-              "SAT",
-              "SUN",
-              "PH"
-            ],
-            "excludePublicHoliday": false,
-            "remark": "Terms & Conditions: 1) $100 day parking is valid for Private CPS, effective from 08:00 – 20:00 (Sat, Sun and PH). 2) Parking is charged at the prevailing hourly rate or daily rate whichever is less. 3) Parking for part of an hour will be charged as an hour. 4) Single entry only. 5) Manulife Place reserves the right to amend any terms and conditions without prior notice and make final decision regarding any disputes about the offer. 6) Subject to further revision without prior notice.",
-            "periodStart": "08:00",
-            "periodEnd": "20:00",
-            "price": 100,
-            "type": "day-park",
-            "covered": "covered",
-            "validUntil": "no-restrictions"
-          },
-          {
-            "weekdays": [
-              "MON",
-              "TUE",
-              "WED",
-              "THU",
-              "FRI",
-              "SAT",
-              "SUN",
-              "PH"
-            ],
-            "excludePublicHoliday": false,
-            "remark": "Terms & Conditions: 1) $95 night parking is valid for Private CPS, effective from 20:00 – 08:00. 2) Parking is charged at the prevailing hourly rate or daily rate whichever is less. 3) Parking for part of an hour will be charged as an hour. 4) Single entry only. 5) Manulife Place reserves the right to amend any terms and conditions without prior notice and make final decision regarding any disputes about the offer. 6) Subject to further revision without prior notice.",
-            "validUntil": "no-restrictions",
-            "covered": "covered",
-            "type": "night-park",
-            "price": 95,
-            "periodEnd": "08:00",
-            "periodStart": "20:00"
-          }
-        ],
-        "hourlyCharges": [
-          {
-            "weekdays": [
-              "MON",
-              "TUE",
-              "WED",
-              "THU",
-              "FRI"
-            ],
-            "excludePublicHoliday": true,
-            "periodStart": "00:00",
-            "periodEnd": "24:00",
-            "price": 27,
-            "type": "hourly",
-            "covered": "covered",
-            "remark": "Terms & Conditions: 1) $200 day parking is valid for Private CPS, effective from 08:00 – 20:00 (Mon - Fri, except PH). 2) $100 day parking is valid for Private CPS, effective from 08:00 – 20:00 (Sat, Sun and PH). 3) $95 night parking is valid for Private CPS, effective from 20:00 – 08:00. 4) Parking is charged at the prevailing hourly rate or daily rate whichever is less. 5) Parking for part of an hour will be charged as an hour. 6) Single entry only. 7) Manulife Place reserves the right to amend any terms and conditions without prior notice and make final decision regarding any disputes about the offer. 8) Subject to further revision without prior notice."
-          },
-          {
-            "weekdays": [
-              "SAT",
-              "SUN",
-              "PH"
-            ],
-            "excludePublicHoliday": false,
-            "covered": "covered",
-            "type": "hourly",
-            "remark": "Terms & Conditions: 1) $200 day parking is valid for Private CPS, effective from 08:00 – 20:00 (Mon - Fri, except PH). 2) $100 day parking is valid for Private CPS, effective from 08:00 – 20:00 (Sat, Sun and PH). 3) $95 night parking is valid for Private CPS, effective from 20:00 – 08:00. 4) Parking is charged at the prevailing hourly rate or daily rate whichever is less. 5) Parking for part of an hour will be charged as an hour. 6) Single entry only. 7) Manulife Place reserves the right to amend any terms and conditions without prior notice and make final decision regarding any disputes about the offer. 8) Subject to further revision without prior notice.",
-            "price": 16,
-            "periodEnd": "24:00",
-            "periodStart": "00:00"
-          }
-        ],
         "spaceUNL": 0,
         "spaceEV": 0,
         "spaceDIS": 0,
-        "space": 20
+        "space": 0
       },
-      "creationDate": "2019-07-18 12:10:34",
-      "modifiedDate": "2022-11-08 17:34:18",
-      "publishedDate": "2020-01-07 17:47:28",
+      "creationDate": "2020-12-18 15:14:58",
+      "modifiedDate": "2022-10-11 13:57:31",
+      "publishedDate": "2020-12-18 15:26:03",
       "lang": "en_US"
     },
     {
